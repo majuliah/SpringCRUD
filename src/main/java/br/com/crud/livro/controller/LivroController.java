@@ -18,9 +18,11 @@ public class LivroController {
     @RequestMapping("/livros")
     public List<Livro> listar() {
 
-        Livro livro = new Livro(123L, "Controller - Spring", 1, "Vitor", Categoria.INFORMATICA, Modelo.EBOOK);
+        Livro livro1 = new Livro(123L, "Controller - Spring", 1, "Vitor", Categoria.INFORMATICA, Modelo.EBOOK);
+        Livro livro2 = new Livro(123L, "Coleções - Boot", 2, "Carlos", Categoria.INFORMATICA, Modelo.EBOOK);
+        Livro livro3 = new Livro(123L, "Mapping - Corallis", 3, "Joseph", Categoria.INFORMATICA, Modelo.EBOOK);
 
-        return Arrays.asList(livro, livro, livro);
+        return Arrays.asList(livro1, livro2, livro3);
 
     }
 
